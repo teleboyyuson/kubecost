@@ -19577,7 +19577,6 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app: cost-analyzer
 spec:
-  storageClassName: sc-kubecost
   accessModes:
     - ReadWriteOnce
   resources:
