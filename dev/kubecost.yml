@@ -19557,6 +19557,7 @@ metadata:
   name: kubecost-prometheus-server
   namespace: kubecost
 spec:
+  storageClassName: sc-kubecost
   accessModes:
     - ReadWriteOnce
   resources:
@@ -19570,13 +19571,13 @@ metadata:
   name: kubecost-cost-analyzer
   namespace: kubecost
   labels:
-
     app.kubernetes.io/name: cost-analyzer
     helm.sh/chart: cost-analyzer-1.108.0
     app.kubernetes.io/instance: kubecost
     app.kubernetes.io/managed-by: Helm
     app: cost-analyzer
 spec:
+  storageClassName: sc-kubecost
   accessModes:
     - ReadWriteOnce
   resources:
