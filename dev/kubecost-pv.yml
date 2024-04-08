@@ -13,14 +13,14 @@ spec:
   storageClassName: kubecost-sc
   local:
     path: /mnt/storage/kubecost
-#  nodeAffinity:
-#    required:
-#      nodeSelectorTerms:
-#      - matchExpressions:
-#        - key: kubernetes.io/hostname
-#          operator: In
-#          values:
-#          - k8s-wn-01
-#          - k8s-wn-02
-#          - k8s-wn-03
-#          - k8s-wn-04
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - k8s-wn-01
+          - k8s-wn-02
+          - k8s-wn-03
+          - k8s-wn-04
