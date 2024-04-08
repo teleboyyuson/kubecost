@@ -19924,7 +19924,7 @@ spec:
     app.kubernetes.io/name: cost-analyzer
     app.kubernetes.io/instance: kubecost
     app: cost-analyzer
-  type: "ClusterIP"
+  type: "NodePort"
   ports:
     - name: tcp-model
       port: 9003
