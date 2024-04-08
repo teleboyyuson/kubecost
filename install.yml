@@ -6,7 +6,6 @@ metadata:
 spec:
   project: default
   source:
-    chart: kubecost
     repoURL: https://github.com/teleboyyuson/kubecost.git
     targetRevision: HEAD
     path: dev
